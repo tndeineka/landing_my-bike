@@ -12,14 +12,35 @@
       resize: none;
       border-radius: 16px;
       margin-bottom: 16px;
-    }
-
-    &::placeholder {
+      font-family: "Poppins", sans-serif;
       font-size: 14px;
       line-height: 20px;
-      color: $placeholder-text;
+      color: #292929;
+
+      &::-webkit-scrollbar {
+          width: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+          background: transparent;
+          border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: $main-color;
+        border-radius: 4px;
+        height: 2px;
+      }
     }
   }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    box-shadow: 0 0 0 30px $forms-color inset;
+  }
+
   &__btn {
     background-color: $main-text-color;
     border-radius: 40px;
