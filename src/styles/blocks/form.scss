@@ -6,8 +6,7 @@
     border-radius: 40px;
     border: none;
     grid-column: 1 / 5;
-    // @include hover(border, 1px solid #D5D7DE);
-    // @include active(border, 1px solid #292929);
+    outline: none;
 
     &--textarea {
       resize: none;

@@ -4,7 +4,24 @@
   bottom: 0;
 
   &__img {
-    width: 100%;
-    margin-bottom: -6px;
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: -6px;
+    }
+
+    &--tablet {
+      display: block;
+      width: 100%;
+      object-fit: contain;
+      margin-bottom: -6px;
+
+      @include onDesktop {
+        display: none;
+      }
+    }
   }
 }
